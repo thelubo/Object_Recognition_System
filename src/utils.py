@@ -90,7 +90,6 @@ def send_username(email):
     if email_sent:
         return True, "Your username has been sent to your email."
     else:
-        # fallback for dev visibility
         print(f"[DEBUG] Username for {email}: {username}")
         return False, "We couldn't send the email. Your username is printed in the server console."
 
@@ -116,7 +115,6 @@ def reset_password(email):
     if email_sent:
         return True, "A new temporary password has been sent to your email."
     else:
-        # Fallback for dev visibility
         print(f"[DEBUG] Temporary password for {email}: {new_pass}")
         return False, "We couldn't send the email. Use the temporary password printed in the server console."
     

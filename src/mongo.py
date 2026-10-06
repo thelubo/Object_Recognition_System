@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 
 # MongoDB Configuration
-MONGO_URI = "mongodb://localhost:27017"  # or replace with your Atlas URI
+MONGO_URI = "mongodb://localhost:27017"
 DB_NAME = "object_detection"
 
 
